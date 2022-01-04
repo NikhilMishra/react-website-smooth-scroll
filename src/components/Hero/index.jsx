@@ -1,31 +1,43 @@
-import React, {useState} from 'react'
-import Video from '../../videos/video.mp4'
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements'
+import React from 'react'
 import { Button } from '../ButtonElements'
+import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './HeroElements'
 
-const Hero = () => {
-  const [hover, setHover] = useState(false);
-
-  const onHover = () => {
-    setHover(!hover)
-  }
-
-  return (
-    <HeroContainer id='home'>
-      <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
-      </HeroBg>
-      <HeroContent>
-        <HeroH1> Virtual Banking Make Easy</HeroH1>
-        <HeroP>Sign up for a new accoun today and recive $250 in credit towards your next payment</HeroP>
-        <HeroBtnWrapper>
-          <Button to='signup' onMouseEnter={onHover} onMouseLeave={onHover} primary='true' dark='true'               smooth={true} duration={500} spy={true} exact='true' offset={-80}>
-            Get Started {hover ? <ArrowForward /> : <ArrowRight/>}
-          </Button>
-        </HeroBtnWrapper>
-      </HeroContent>
-    </HeroContainer>
-  )
+const Info = ({ lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, alt, img, primary, dark, dark2 }) => {
+    return (
+        <>
+            <InfoContainer lightBg={lightBg} id={id}>
+                <InfoWrapper>
+                    <InfoRow imgStart={imgStart}>
+                        <Column1>
+                            <TextWrapper>
+                                <TopLine>{topLine}</TopLine>
+                                <Heading lightText={lightText}>{headline}</Heading>
+                                <Subtitle darkText={darkText}>{description}</Subtitle>
+                                <BtnWrap>
+                                    <Button to='home'
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact='true'
+                                        offset={-80}
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1 : 0}
+                                    >{buttonLabel}
+                                    </Button>
+                                </BtnWrap>
+                            </TextWrapper>
+                        </Column1>
+                        <Column2>
+                            <ImgWrap>
+                                <Img src={img} alt={alt} />
+                            </ImgWrap>
+                        </Column2>
+                    </InfoRow>
+                </InfoWrapper>
+            </InfoContainer>
+        </>
+    )
 }
 
-export default Hero
+export default Info

@@ -1,25 +1,40 @@
 import React from 'react'
-import { SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SidebarRoute, SideBtnWrap } from './SidebarElements'
+import {
+    SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute, DiscordLogo, InstaLogo, TwitterLogo } from './SidebarElements'
 
-const Sidebar = ({isOpen,toggle}) => {
-  return (
-    <SidebarContainer isOpen={isOpen} onClick={toggle}>
-      <Icon onClick={toggle}>
-        <CloseIcon />
-      </Icon>
-      <SidebarWrapper>
-        <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to='services' onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to='signup' onClick={toggle}>Sign up</SidebarLink>
-        </SidebarMenu>
-        <SideBtnWrap>
-          <SidebarRoute to='/signin'>Sign in</SidebarRoute>
-        </SideBtnWrap>
-      </SidebarWrapper>
-    </SidebarContainer>
-  )
-}
+const Sidebar = ({ isOpen, toggle }) => {
+    return (
+        <SidebarContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
+                <CloseIcon />
+            </Icon>
+            <SidebarWrapper>
+                <SidebarMenu>
+                    <SidebarLink to="rarity" onClick={toggle}>
+                        Rarity
+                    </SidebarLink>
+                    <SidebarLink to="roadmap" onClick={toggle}>
+                        Roadmap
+                    </SidebarLink>
+                    <SidebarLink to="outreach" onClick={toggle}>
+                        Outreach
+                    </SidebarLink>
+                    <SidebarLink to="team" onClick={toggle}>
+                        Team
+                    </SidebarLink>
+                    <SidebarLink to="/">
+                        <DiscordLogo/>
+                    </SidebarLink>
+                    <SidebarLink to="/">
+                        <InstaLogo />
+                    </SidebarLink>
+                    <SidebarLink to="/">
+                        <TwitterLogo style={{ paddingTop: 20 + 'px' }}/>
+                    </SidebarLink>
+                </SidebarMenu>
+            </SidebarWrapper>
+        </SidebarContainer>
+    );
+};
 
-export default Sidebar
+export default Sidebar;

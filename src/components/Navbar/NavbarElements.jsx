@@ -1,109 +1,138 @@
-import styled from 'styled-components'
-import { Link as LinkR } from 'react-router-dom'
-import { Link as LinkS } from 'react-scroll'
+import { FaBars } from 'react-icons/fa';
+import { NavLink as Link } from 'react-router-dom';
+import styled from 'styled-components';
+import logo from '../../images/logo.png';
+import mobileLogo from '../../images/mobile-logo.svg';
+import discordLogo from '../../images/discord-logo.png';
+import instaLogo from '../../images/insta-logo.png';
+import twitterLogo from '../../images/twitter-logo.png';
 
-export const Nav = styled.nav`
-  background: ${({scrollNav}) => (scrollNav ? '#000' : 'transparent')};
-  height: 80px;
-  margin-top: -80px;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  position: sticky;
-  top:0;
-  z-index:10;
+export const Logo = styled.div`
+  background-image: url(${logo});
+  width: 215px;
+  height: 139px;
 
-  @media screen and (max-width: 960px) {
-    transition: 0.8s all ease;
+  @media screen and (max-width: 1225px) {
+    background-image: url(${mobileLogo});
+    width: 66px;
+    height: 54px;
   }
-`
+`;
 
-export const NavbarContainer = styled.div`
+export const DiscordLogo = styled.div`
+  background-image: url(${discordLogo});
+  width: 40px;
+  height: 31px;
+`;
+
+export const InstaLogo = styled.div`
+  background-image: url(${instaLogo});
+  width: 40px;
+  height: 40px;
+`;
+
+export const TwitterLogo = styled.div`
+  background-image: url(${twitterLogo});
+  width: 40px;
+  height: 33px;
+`;
+export const Nav = styled.nav`
+  background: #FFF;
+  height: 80px;
   display: flex;
   justify-content: space-between;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1100px;
-`
-export const NavLogo = styled(LinkR) `
-  color:#fff;
-  justify-self: flex-start;
-  cursor: pointer;
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  margin-left: 24px;
-  font-weight: bold;
-  text-decoration: none;
-`
-export const MobileIcon = styled.div`
-  display: none;
-  
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.8rem;
-    cursor: pointer;
-    color: #fff;
-  }
-`
-export const NavMenu = styled.ul`
-  display:flex;
-  justify-content: center;
-  list-style: none;
-  text-align: center;
-  margin-right: -22px;
+  padding: 0.5rem calc((85vw - 1000px) / 2);
+  margin-top: 35px;
+  z-index: 10;
+  padding-top: 25px;
+  /* Third Nav */
+  /* justify-content: flex-start; */
+`;
 
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`
-export const NavItem = styled.li`
-  height: 80px;
-`
-export const NavLinks = styled(LinkS)`
-  color: #fff;
+export const NavLink = styled(Link)`
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 2rem;
+  font-family: 'Nunito', sans-serif;
+  font-size: 21px;
   height: 100%;
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71
+    color: #15cdfc;
   }
-`
+`;
+
+export const MenuIcon = styled.div`
+    display: none;
+}
+`;
+
+export const Bars = styled(FaBars)`
+  display: none;
+  color: #000;
+
+  @media screen and (max-width: 1225px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+`;
+
+export const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  margin-right: -24px;
+
+  /* Second Nav */
+  /* margin-right: 24px; */
+
+  /* Third Nav */
+  /* width: 100vw;
+  white-space: nowrap; */
+
+  @media screen and (max-width: 1225px) {
+    display: none;
+  }
+`;
+
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
+  margin-right: 24px;
 
-  @media screen and (max-width: 768px) {
+  /* Third Nav */
+  /* justify-content: flex-end;
+  width: 100vw; */
+
+  @media screen and (max-width: 1225px) {
     display: none;
   }
-`
-export const NavBtnLink = styled(LinkR)`
-  border-radius: 50px;
-  background: #01bf71;
-  white-space: nowrap;
+`;
+
+export const NavBtnLink = styled(Link)`
+  border-radius: 4px;
+  background: #256ce1;
   padding: 10px 22px;
-  color: #010606;
-  font-size: 16px;
+  color: #fff;
   outline: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
 
+  /* Second Nav */
+  margin-left: 24px;
+
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #fff;
     color: #010606;
   }
-`
+`;

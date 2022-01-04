@@ -1,18 +1,18 @@
 export const homeObjOne = {
   id: 'about',
   lightBg: false,
-  lightText: true,
+  lightText: false,
   lighttextDesc: true,
   topLine: 'Premium Bank',
-  headline: 'Unlimited Transactions with zero fees',
-  description: 'Get access to our exclusive app that allows you to send unlimited transactions whitout getting charged any fees.',
+  headline: 'Meet the Suspicious Fish',
+  description: '5,050 uniquely generated suspicious fish ready to take back their ocean. Hand drawn and code generated, no two fish are the same.',
   buttonLabel: 'Get started',
   imgStart: false,
-  img: '/images/svg-1.svg',
+  img: '/images/svg-2.svg',
   alt: 'car',
   dark: true,
   primary: true,
-  darkText: false
+  darkText: true
 };
 
 export const homeObjTwo = {

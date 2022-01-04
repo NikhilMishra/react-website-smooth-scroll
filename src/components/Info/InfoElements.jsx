@@ -1,29 +1,27 @@
 import styled from 'styled-components';
+import fishy from '../../images/fishy.png';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+  //background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and  (max-width: 768px) {
     padding: 100px 0;
   }
 `
 export const InfoWrapper = styled.div`
-  display: grid;
+  display: flex;
   z-index: 1;
   height: 860px;
-  width: 100%auto;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+  padding: 0.5rem calc((85vw - 1000px) / 2);
   justify-content: center;
 `
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
-  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+  height: 600px;
+  grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col3 col1'` : `'col1 col3 col2'`)};
 
   @media screen and (max-width: 768px) {
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)}
@@ -34,13 +32,30 @@ export const Column1 = styled.div`
   padding: 0 15px;
   grid-area: col1;
 `
+
+export const Fishy = styled.div`
+  background-image: url(${fishy});
+  width: 401px;
+  height: 510px;
+`;
+
 export const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  width: 401px;
 `
+
+export const Column3 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+  width: 401px;
+`
+
 export const TextWrapper = styled.div`
-  max-width: 540px;
+  max-width: 600px;
+  padding: 0 2rem;
   padding-top: 0;
   padding-bottom: 60px;
 `
@@ -59,6 +74,7 @@ export const Heading = styled.h1`
   font-size: 48px;
   line-height: 1.1;
   font-weight: 600px;
+  font-family: corben;
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 
   @media screen and (max-width: 480px) {
@@ -68,7 +84,7 @@ export const Heading = styled.h1`
 export const Subtitle  = styled.p`
   max-width: 440px;
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 15px;
   line-height: 24px;
   color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
@@ -78,6 +94,7 @@ export const BtnWrap = styled.div`
 `;
 export const ImgWrap = styled.div`
   max-width: 555px;
+  align-content: center;
   height: 100%;
 `;
 export const Img = styled.img`
