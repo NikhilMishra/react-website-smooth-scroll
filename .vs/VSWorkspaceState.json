@@ -1,14 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\public",
     "\\src",
     "\\src\\components",
     "\\src\\components\\Hero",
     "\\src\\components\\Info",
     "\\src\\components\\Navbar",
+    "\\src\\components\\Services",
+    "\\src\\components\\Timeline",
     "\\src\\images",
     "\\src\\pages"
   ],
+  "SelectedNode": "\\src\\images\\fishy.png",
   "PreviewInSolutionExplorer": false
 }

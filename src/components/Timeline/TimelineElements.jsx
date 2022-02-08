@@ -8,7 +8,7 @@ import charity from '../../images/charity.png';
 
 export const Time = styled.div`
   background: #FFF;
-  height: 2000px;
+  height: 1950px;
   text-align: center;
 `;
 
@@ -76,6 +76,7 @@ export const Charity = styled.div`
 export const Caption = styled.span`
   font-size: 16px;
   font-family: 'Encode Sans Expanded', sans-serif;\
+  font-weight: bold;
 `
 
 export const Sold = styled.span`

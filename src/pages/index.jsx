@@ -7,6 +7,8 @@ import { homeObjOne, homeObjTwo, homeObjThree} from '../components/Info/Data';
 import Navbar from '../components/Navbar'
 import Services from '../components/Services';
 import Sidebar from '../components/SideBar'
+import Outreach from '../components/Outreach'
+import Team from '../components/Team'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -20,8 +22,9 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
           <Info {...homeObjOne} />
-          <Timeline/>
-      <Footer />
+          <Timeline />
+          <Outreach />
+          <Team/>
     </>
   )
 }
