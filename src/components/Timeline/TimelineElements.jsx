@@ -1,4 +1,3 @@
-import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 import line from '../../images/Vector.png';
 import airdrop from '../../images/airdrop.png';

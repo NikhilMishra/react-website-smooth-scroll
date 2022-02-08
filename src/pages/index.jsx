@@ -1,11 +1,8 @@
 import React, {useState} from 'react'
-import Footer from '../components/Footer';
-import Hero from '../components/Hero'
 import Info from '../components/Info'
 import Timeline from '../components/Timeline'
-import { homeObjOne, homeObjTwo, homeObjThree} from '../components/Info/Data';
+import { homeObjOne} from '../components/Info/Data';
 import Navbar from '../components/Navbar'
-import Services from '../components/Services';
 import Sidebar from '../components/SideBar'
 import Outreach from '../components/Outreach'
 import Team from '../components/Team'
