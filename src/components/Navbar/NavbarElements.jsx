@@ -1,7 +1,7 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 import mobileLogo from '../../images/mobile-logo.svg';
 import discordLogo from '../../images/discord-logo.png';
 import instaLogo from '../../images/insta-logo.png';
@@ -9,6 +9,8 @@ import twitterLogo from '../../images/twitter-logo.png';
 
 export const Logo = styled.div`
   background-image: url(${logo});
+  background-repeat: no-repeat;
+  background-position: center;
   width: 215px;
   height: 139px;
 
@@ -37,14 +39,14 @@ export const TwitterLogo = styled.div`
   height: 33px;
 `;
 export const Nav = styled.nav`
-  background: #FFF;
+  // background: #FFF;
   height: 80px;
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((85vw - 1000px) / 2);
-  margin-top: 35px;
+  // margin-top: 35px;
   z-index: 10;
-  padding-top: 25px;
+  padding-top: 100px;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;

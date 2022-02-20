@@ -8,7 +8,7 @@ export const homeObjOne = {
   description: '5,050 uniquely generated suspicious fish ready to take back their ocean. Hand drawn and code generated, no two fish are the same.',
   buttonLabel: 'Get started',
   imgStart: false,
-  img: '/images/svg-2.svg',
+  img: '/images/fishy.svg',
   alt: 'car',
   dark: true,
   primary: true,

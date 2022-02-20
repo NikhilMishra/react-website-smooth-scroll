@@ -16,9 +16,9 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, de
             </Column1>
             <Column3/>
             <Column2>
-              <ImgWrap>
+              {/* <ImgWrap>
                 <Fishy />
-              </ImgWrap>
+              </ImgWrap> */}
             </Column2>
           </InfoRow>
         </InfoWrapper>
