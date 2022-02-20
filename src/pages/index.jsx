@@ -1,12 +1,12 @@
 import React, {useState} from 'react'
-import Footer from '../components/Footer';
-import Hero from '../components/Hero'
 import Info from '../components/Info'
-import { homeObjOne, homeObjTwo, homeObjThree} from '../components/Info/Data';
+import Timeline from '../components/Timeline'
+import { homeObjOne} from '../components/Info/Data';
 import Navbar from '../components/Navbar'
-import Services from '../components/Services';
 import Sidebar from '../components/SideBar'
 import background from '../images/background_test_5.png'
+import Outreach from '../components/Outreach'
+import Team from '../components/Team'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -26,12 +26,12 @@ const Home = () => {
                     }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
-      <Info {...homeObjOne}/>
-      <Info {...homeObjTwo}/>
-      <Services />
-      <Info {...homeObjThree}/>
-      <Footer />
+      <Info {...homeObjOne} />
+          <Timeline />
+          <Outreach />
+          <Team/>
       </div>
+          
     </>
   )
 }

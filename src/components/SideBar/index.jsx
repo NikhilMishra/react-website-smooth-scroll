@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, SideBtnWrap, SidebarRoute, DiscordLogo, InstaLogo, TwitterLogo } from './SidebarElements'
+    SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, DiscordLogo, InstaLogo, TwitterLogo } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
