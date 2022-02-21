@@ -4,7 +4,7 @@ import Timeline from '../components/Timeline'
 import { homeObjOne} from '../components/Info/Data';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/SideBar'
-import background from '../images/background_test_5.png'
+import background from '../images/bg_9.png'
 import Outreach from '../components/Outreach'
 import Team from '../components/Team'
 

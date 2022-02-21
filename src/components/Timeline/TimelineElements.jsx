@@ -6,15 +6,15 @@ import merch from '../../images/merch.png';
 import charity from '../../images/charity.png';
 
 export const Time = styled.div`
-  background: #FFF;
+  // background: #FFF;
   height: 1950px;
   text-align: center;
 `;
 
 export const LineHeader = styled.span`
-  font-weight: 500;
-  font-size: 24px;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  // font-weight: 500;
+  font-size: 48px;
+  font-family: 'Avenir', sans-serif;
 `
 
 export const Line = styled.div`
@@ -73,18 +73,18 @@ export const Charity = styled.div`
 `
 
 export const Caption = styled.span`
-  font-size: 16px;
-  font-family: 'Encode Sans Expanded', sans-serif;\
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;\
   font-weight: bold;
 `
 
 export const Sold = styled.span`
-  font-size: 12px;
+  font-size: 14px;
   color: grey;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Avenir', sans-serif;
 `
 
 export const SubCaption = styled.span`
-  font-size: 12px;
-  font-family: 'Encode Sans Expanded', sans-serif;\
+  font-size: 16px;
+  font-family: 'Avenir', sans-serif;\
 `

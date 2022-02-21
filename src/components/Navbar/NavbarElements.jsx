@@ -57,7 +57,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 2rem;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Avenir', sans-serif;
   font-size: 21px;
   height: 100%;
   cursor: pointer;

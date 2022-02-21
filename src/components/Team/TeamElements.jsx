@@ -4,7 +4,7 @@ import abhinav from '../../images/abhinav.png';
 import styled from 'styled-components';
 
 export const OutreachDiv = styled.div`
-  background: #FFF;
+  // background: #FFF;
   height: 500px;
   padding: 0.5rem calc((85vw - 1000px) / 2);
 `;
@@ -75,13 +75,13 @@ export const Abhinav = styled.div`
 
 export const Caption = styled.span`
   padding-top: 10px;
-  font-size: 16px;
-  font-family: 'Encode Sans Expanded', sans-serif;\
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;\
   font-weight: bold;
 `
 
 export const Role = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   color: grey;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Avenir', sans-serif;
 `

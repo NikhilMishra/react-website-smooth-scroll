@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const OutreachDiv = styled.div`
-  background: #FFF;
+  // background: #FFF;
   height: 500px;
   text-align: left;
   padding: 0.5rem calc((85vw - 1000px) / 2);
