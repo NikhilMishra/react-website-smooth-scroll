@@ -1,5 +1,7 @@
 import styled from 'styled-components';
-import fishy from '../../images/fishy.png';
+// import fishy from '../../images/fishy.png';
+import fishy from '../../images/profile_image.png';
+import background from '../../images/background_test_3.png';
 
 export const InfoContainer = styled.div`
   color: #fff;
@@ -39,25 +41,32 @@ export const Column1 = styled.div`
 
 export const Fishy = styled.div`
   background-image: url(${fishy});
-  width: 401px;
-  height: 510px;
+  background-position: center;
+  background-size: contain;
+  width: 410px;
+  height: 410px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
   @media screen and (max-width: 1225px) {
     display: none;
   }
 `;
 
 export const Column2 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
+  // margin-bottom: 15px;
+  // padding: 0 15px;
+  // background-color: black;
+  align-content: center;
   grid-area: col2;
-  width: 401px;
+  width: 450px;
 `
 
 export const Column3 = styled.div`
-  margin-bottom: 15px;
-  padding: 0 15px;
-  grid-area: col2;
-  width: 401px;
+  // margin-bottom: 15px;
+  // padding: 0 15px;
+  // grid-area: col2;
+  // width: 401px;
 `
 
 export const TextWrapper = styled.div`
@@ -101,9 +110,9 @@ export const BtnWrap = styled.div`
   justify-content: flex-start;
 `;
 export const ImgWrap = styled.div`
-  max-width: 555px;
-  align-content: center;
-  height: 100%;
+  // max-width: 555px;
+  // align-content: center;
+  // height: 100%;
 `;
 export const Img = styled.img`
   width: 100%;

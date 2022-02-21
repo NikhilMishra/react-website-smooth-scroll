@@ -3,8 +3,8 @@ import nikhil from '../../images/nikhil.png';
 import abhinav from '../../images/abhinav.png';
 import styled from 'styled-components';
 
-export const TeamDiv = styled.div`
-  background: #FFF;
+export const OutreachDiv = styled.div`
+  // background: #FFF;
   height: 600px;
   padding: 0.5rem calc((85vw - 1000px) / 2);
 @media screen and  (max-width: 1225px) {
@@ -79,13 +79,13 @@ export const Abhinav = styled.div`
 
 export const Caption = styled.span`
   padding-top: 10px;
-  font-size: 16px;
-  font-family: 'Encode Sans Expanded', sans-serif;\
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;\
   font-weight: bold;
 `
 
 export const Role = styled.p`
-  font-size: 12px;
+  font-size: 14px;
   color: grey;
-  font-family: 'Encode Sans Expanded', sans-serif;
+  font-family: 'Avenir', sans-serif;
 `

@@ -27,3 +27,4 @@ const Info = ({ toggle }) => {
 }
 
 export default Info
+

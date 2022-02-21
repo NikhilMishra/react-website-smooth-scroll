@@ -3,6 +3,7 @@ import Info from '../components/Info'
 import Timeline from '../components/Timeline'
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/SideBar'
+import background from '../images/bg_9.png'
 import Outreach from '../components/Outreach'
 import Team from '../components/Team'
 
@@ -15,12 +16,21 @@ const Home = () => {
 
   return (
     <>
+      <div style={{backgroundImage: `url(${background})`, 
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    // backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    // backgroundSize: '250px', 
+                    }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
           <Info/>
           <Timeline />
           <Outreach />
           <Team/>
+      </div>
+          
     </>
   )
 }
