@@ -1,8 +1,8 @@
 import React from 'react';
 import {
-    OutreachDiv,
-    OutreachH,
-    OutreachP,
+    TeamDiv,
+    TeamH,
+    TeamP,
     Column,
     BigSpace,
     Caption,
@@ -17,8 +17,8 @@ import {
 const Navbar = ({ toggle }) => {
     return (
         <>
-            <OutreachDiv>
-                <OutreachH>The Team<br /></OutreachH>
+            <TeamDiv id='team'>
+                <TeamH>The Team<br /></TeamH>
                 <BigSpace />
                 <Column>
                     <Ashika />
@@ -27,7 +27,7 @@ const Navbar = ({ toggle }) => {
                     <SmallSpace />
                     <Role> Artist </Role>
                     <SmallSpace/>
-                    <OutreachP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></OutreachP>
+                    <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
                 </Column>
                 <Column>
                     <Nikhil />
@@ -36,7 +36,7 @@ const Navbar = ({ toggle }) => {
                     <SmallSpace />
                     <Role> Developer </Role>
                     <SmallSpace />
-                    <OutreachP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></OutreachP>
+                    <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
                 </Column><Column>
                     <Abhinav />
                     <Space />
@@ -44,9 +44,9 @@ const Navbar = ({ toggle }) => {
                     <SmallSpace />
                     <Role> Developer 2 </Role>
                     <SmallSpace />
-                    <OutreachP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></OutreachP>
+                    <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
                 </Column>
-            </OutreachDiv>
+            </TeamDiv>
         </>
     );
 };

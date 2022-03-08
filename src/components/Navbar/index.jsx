@@ -1,4 +1,5 @@
 import React from 'react';
+import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavLink,
@@ -10,25 +11,26 @@ import {
   TwitterLogo
 } from './NavbarElements';
 
+const toggleHome = () => {
+    scroll.scrollToTop();
+}
+
 const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
-        <NavLink to='/'>
+        <NavLink to='/' onClick={toggleHome}>
           <Logo/>
         </NavLink>
               <Bars onClick={toggle}/>
         <NavMenu>
-          <NavLink to='/rarity' activeStyle>
-            Rarity
-          </NavLink>
-          <NavLink to='/roadmap' activeStyle>
+          <NavLink to="roadmap" spy={true} smooth={true}>
             Roadmap
           </NavLink>
-          <NavLink to='/outreach' activeStyle>
+          <NavLink to='outreach' spy={true} smooth={true}>
             Outreach
           </NavLink>
-          <NavLink to='/team' activeStyle>
+          <NavLink to='team' spy={true} smooth={true}>
             Team
           </NavLink>
           <NavLink to='/'>

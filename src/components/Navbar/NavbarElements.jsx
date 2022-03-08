@@ -6,6 +6,7 @@ import mobileLogo from '../../images/mobile-logo.svg';
 import discordLogo from '../../images/discord-logo.png';
 import instaLogo from '../../images/insta-logo.png';
 import twitterLogo from '../../images/twitter-logo.png';
+import { Link as LinkS } from 'react-scroll'
 
 export const Logo = styled.div`
   background-image: url(${logo});
@@ -49,7 +50,7 @@ export const Nav = styled.nav`
   /* justify-content: flex-start; */
 `;
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkS)`
   color: #000;
   display: flex;
   align-items: center;

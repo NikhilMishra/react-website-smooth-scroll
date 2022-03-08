@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import Info from '../components/Info'
 import Timeline from '../components/Timeline'
-import { homeObjOne} from '../components/Info/Data';
 import Navbar from '../components/Navbar'
 import Sidebar from '../components/SideBar'
 import Outreach from '../components/Outreach'
@@ -18,7 +17,7 @@ const Home = () => {
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
-          <Info {...homeObjOne} />
+          <Info/>
           <Timeline />
           <Outreach />
           <Team/>

@@ -10,16 +10,13 @@ const Sidebar = ({ isOpen, toggle }) => {
             </Icon>
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="rarity" onClick={toggle}>
-                        Rarity
-                    </SidebarLink>
-                    <SidebarLink to="roadmap" onClick={toggle}>
+                    <SidebarLink to="roadmap" spy={true} smooth={true} onClick={toggle}>
                         Roadmap
                     </SidebarLink>
-                    <SidebarLink to="outreach" onClick={toggle}>
+                    <SidebarLink to="outreach" spy={true} smooth={true} onClick={toggle}>
                         Outreach
                     </SidebarLink>
-                    <SidebarLink to="team" onClick={toggle}>
+                    <SidebarLink to="team" spy={true} smooth={true} onClick={toggle}>
                         Team
                     </SidebarLink>
                     <SidebarLink to="/">

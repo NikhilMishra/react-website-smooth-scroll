@@ -15,7 +15,7 @@ import {
 const Timeline = ({ toggle }) => {
   return (
     <>
-          <Time>
+          <Time id='roadmap'>
               <LineHeader>Road Map</LineHeader>
               <Line />
               <Airdrop />
@@ -31,12 +31,13 @@ const Timeline = ({ toggle }) => {
               <Merch />
               <Caption>Merch<br /></Caption>
               <Sold><br />75% Sold<br /></Sold>
-              <SubCaption><br />We're going to make the best merch ever! Guccie who?<br /></SubCaption>
+              <SubCaption><br />Get your suspicious merch!<br /></SubCaption>
               <Line />
               <Charity />
               <Caption>Charity<br /></Caption>
               <Sold><br />100% Sold<br /></Sold>
               <SubCaption><br />Donate 20% of all proceeds to save the ocean!<br /></SubCaption>
+              <Line />
           </Time>
     </>
   );

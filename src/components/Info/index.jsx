@@ -1,16 +1,16 @@
 import React from 'react'
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, Heading, Subtitle, ImgWrap, Fishy, Column3 } from './InfoElements'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, buttonLabel, alt, img, primary, dark, dark2 }) => {
+const Info = ({ toggle }) => {
   return (
     <>
-      <InfoContainer lightBg={lightBg} id={id}>
+      <InfoContainer>
         <InfoWrapper>
-          <InfoRow imgStart={imgStart}>
+          <InfoRow>
             <Column1>
               <TextWrapper>
-                <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
+                <Heading>Meet the Suspicious Fish</Heading>
+                <Subtitle>5,050 uniquely generated suspicious fish ready to take back their ocean. Hand drawn and code generated, no two fish are the same.</Subtitle>
               </TextWrapper>
             </Column1>
             <Column3/>

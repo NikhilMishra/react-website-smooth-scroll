@@ -3,10 +3,14 @@ import nikhil from '../../images/nikhil.png';
 import abhinav from '../../images/abhinav.png';
 import styled from 'styled-components';
 
-export const OutreachDiv = styled.div`
+export const TeamDiv = styled.div`
   background: #FFF;
-  height: 500px;
+  height: 600px;
   padding: 0.5rem calc((85vw - 1000px) / 2);
+@media screen and  (max-width: 1225px) {
+    padding: 100px 0;
+    height: 460px;
+  }
 `;
 
 export const BigSpace = styled.div`
@@ -29,12 +33,12 @@ export const Column = styled.div`
   text-align: center;
 `
 
-export const OutreachH = styled.span`
+export const TeamH = styled.span`
   font-size: 48px;
   font-family: 'Avenir', sans-serif;\
 `
 
-export const OutreachP = styled.p`
+export const TeamP = styled.p`
   font-size: 16px;
   line-height: 2;
   font-family: 'Avenir', sans-serif;\
