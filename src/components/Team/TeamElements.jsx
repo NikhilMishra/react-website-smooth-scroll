@@ -3,7 +3,7 @@ import nikhil from '../../images/nikhil.png';
 import abhinav from '../../images/abhinav.png';
 import styled from 'styled-components';
 
-export const OutreachDiv = styled.div`
+export const TeamDiv = styled.div`
   // background: #FFF;
   height: 600px;
   padding: 0.5rem calc((85vw - 1000px) / 2);

@@ -7,7 +7,7 @@ import charity from '../../images/charity.png';
 
 export const Time = styled.div`
   // background: #FFF;
-  height: 1950px;
+  height: 2100px;
   text-align: center;
 `;
 

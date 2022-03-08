@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 // import fishy from '../../images/fishy.png';
 import fishy from '../../images/profile_image.png';
-import background from '../../images/background_test_3.png';
+//import background from '../../images/background_test_3.png';
 
 export const InfoContainer = styled.div`
   color: #fff;
