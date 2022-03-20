@@ -3,11 +3,10 @@ import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
   NavLink,
+  NavRoute,
   Bars,
   NavMenu,
   Logo,
-  DiscordLogo,
-  InstaLogo,
   TwitterLogo
 } from './NavbarElements';
 
@@ -33,15 +32,9 @@ const Navbar = ({ toggle }) => {
           <NavLink to='team' spy={true} smooth={true}>
             Team
           </NavLink>
-          <NavLink to='/'>
-            <DiscordLogo/>
-          </NavLink>
-          <NavLink to='/'>
-            <InstaLogo/>
-          </NavLink>
-          <NavLink to='/'>
+          <NavRoute to={{ pathname: "https://twitter.com/SusFishNft" }} target="_blank">
             <TwitterLogo/>
-          </NavLink>
+          </NavRoute>
         </NavMenu>
       </Nav>
     </>

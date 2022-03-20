@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-    SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, DiscordLogo, InstaLogo, TwitterLogo } from './SidebarElements'
+    SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, TwitterLogo, SidebarRoute } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
     return (
@@ -19,15 +19,9 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to="team" spy={true} smooth={true} onClick={toggle}>
                         Team
                     </SidebarLink>
-                    <SidebarLink to="/">
-                        <DiscordLogo/>
-                    </SidebarLink>
-                    <SidebarLink to="/">
-                        <InstaLogo />
-                    </SidebarLink>
-                    <SidebarLink to="/">
+                    <SidebarRoute to={{ pathname: "https://twitter.com/SusFishNft" }} target="_blank">
                         <TwitterLogo style={{ paddingTop: 20 + 'px' }}/>
-                    </SidebarLink>
+                    </SidebarRoute>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>

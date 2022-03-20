@@ -1,12 +1,13 @@
 import { FaBars } from 'react-icons/fa';
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-import logo from '../../images/logo.png';
+import logo from '../../images/logo.svg';
 import mobileLogo from '../../images/mobile-logo.svg';
 import discordLogo from '../../images/discord-logo.png';
 import instaLogo from '../../images/insta-logo.png';
 import twitterLogo from '../../images/twitter-logo.png';
 import { Link as LinkS } from 'react-scroll'
+import { Link as LinkR } from 'react-router-dom';
 
 export const Logo = styled.div`
   background-image: url(${logo});
@@ -30,6 +31,7 @@ export const InstaLogo = styled.div`
   background-image: url(${instaLogo});
   width: 40px;
   height: 40px;
+  display: hidden;
 `;
 
 export const TwitterLogo = styled.div`
@@ -38,7 +40,6 @@ export const TwitterLogo = styled.div`
   height: 33px;
 `;
 export const Nav = styled.nav`
-  background: #FFF;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -66,6 +67,22 @@ export const NavLink = styled(LinkS)`
   }
 `;
 
+export const NavRoute = styled(LinkR)`
+  color: #000;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 2rem;
+  font-family: 'Avenir', sans-serif;
+  font-size: 21px;
+  height: 100%;
+  cursor: pointer;
+
+  &.active {
+    color: #15cdfc;
+  }
+`;
+
 export const MenuIcon = styled.div`
     display: none;
 }
@@ -76,6 +93,7 @@ export const Bars = styled(FaBars)`
   color: #000;
 
   @media screen and (max-width: 1225px) {
+    margin-top: 45px;
     display: block;
     position: absolute;
     top: 0;

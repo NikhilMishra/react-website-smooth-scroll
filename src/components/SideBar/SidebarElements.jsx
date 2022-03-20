@@ -11,7 +11,7 @@ export const SidebarContainer = styled.aside`
     z-index: 999;
     width: 100%;
     height: 100%;
-    background: #ADD8E6;
+    background: #FFF;
     display: grid;
     align-items: center;
     top: 0;
@@ -22,7 +22,6 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const CloseIcon = styled(FaTimes)`
-    color: #fff
 `;
 
 export const DiscordLogo = styled.div`
@@ -55,7 +54,6 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-    color: #fff;
 `
 
 export const SidebarMenu = styled.ul`
@@ -81,7 +79,7 @@ export const SidebarLink = styled(LinkS)`
     cursor: pointer;
 
     &:hover {
-    color: #01Bf71;
+    color: #89CFF0;
     transition: 0.2s ease-in-out;
     }
 `
@@ -92,21 +90,17 @@ export const SideBtnWrap = styled.div`
 `
 
 export const SidebarRoute = styled(LinkR)`
-    border-radius: 50px;
-    background: #01bf71;
-    white-space: nowrap;
-    padding: 16px 64px;
-    color: #010606;
-    font-size: 16px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
 
     &:hover {
-    color: #010606;
-    background: #fff;
+    color: #01Bf71;
     transition: 0.2s ease-in-out;
     }
 `
