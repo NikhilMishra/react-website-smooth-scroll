@@ -44,7 +44,6 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((85vw - 1000px) / 2);
-  margin-top: 35px;
   z-index: 10;
   padding-top: 25px;
   /* Third Nav */
@@ -93,7 +92,6 @@ export const Bars = styled(FaBars)`
   color: #000;
 
   @media screen and (max-width: 1225px) {
-    margin-top: 45px;
     display: block;
     position: absolute;
     top: 0;
