@@ -12,7 +12,7 @@ import { Link as LinkR } from 'react-router-dom';
 export const Logo = styled.div`
   background-image: url(${logo});
   width: 215px;
-  height: 139px;
+  height: 100px;
 
   @media screen and (max-width: 1225px) {
     background-image: url(${mobileLogo});
@@ -45,7 +45,7 @@ export const Nav = styled.nav`
   justify-content: space-between;
   padding: 0.5rem calc((85vw - 1000px) / 2);
   z-index: 10;
-  padding-top: 25px;
+  padding-top: 50px;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
