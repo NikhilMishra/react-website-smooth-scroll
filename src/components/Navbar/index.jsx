@@ -4,7 +4,6 @@ import {
   Nav,
   NavLink,
   NavRoute,
-  BarsContainer,
   Bars,
   NavMenu,
   Logo,
