@@ -4,6 +4,7 @@ import {
   Nav,
   NavLink,
   NavRoute,
+  BarsContainer,
   Bars,
   NavMenu,
   Logo,
@@ -21,7 +22,9 @@ const Navbar = ({ toggle }) => {
         <NavLink to='/' onClick={toggleHome}>
           <Logo/>
         </NavLink>
-              <Bars onClick={toggle}/>
+        {/* <BarsContainer> */}
+          <Bars onClick={toggle}/>
+        {/* </BarsContainer>    */}
         <NavMenu>
           <NavLink to="roadmap" spy={true} smooth={true}>
             Roadmap

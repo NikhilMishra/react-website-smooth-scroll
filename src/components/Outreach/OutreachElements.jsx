@@ -1,9 +1,12 @@
 import styled from 'styled-components';
 
 export const OutreachDiv = styled.div`
-  height: 350px;
+  // height: 350px;
   text-align: left;
-  padding: 0.5rem calc((85vw - 1000px) / 2);
+  // padding: 0.5rem calc((85vw - 1000px) / 2);
+  // padding-vertical: 50px;
+  padding: 50px 0px 50px 0px;
+  // background-color: pink;
 
 `;
 

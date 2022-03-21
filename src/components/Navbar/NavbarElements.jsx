@@ -12,7 +12,9 @@ import { Link as LinkR } from 'react-router-dom';
 export const Logo = styled.div`
   background-image: url(${logo});
   width: 215px;
-  height: 100px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media screen and (max-width: 1225px) {
     background-image: url(${mobileLogo});
@@ -43,7 +45,7 @@ export const Nav = styled.nav`
   height: 80px;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem calc((85vw - 1000px) / 2);
+  // padding: 0.5rem calc((85vw - 1000px) / 2);
   z-index: 10;
   padding-top: 50px;
   /* Third Nav */
@@ -55,7 +57,7 @@ export const NavLink = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   font-family: 'Avenir', sans-serif;
   font-size: 21px;
   height: 100%;
@@ -71,7 +73,7 @@ export const NavRoute = styled(LinkR)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   font-family: 'Avenir', sans-serif;
   font-size: 21px;
   height: 100%;
@@ -93,10 +95,11 @@ export const Bars = styled(FaBars)`
 
   @media screen and (max-width: 1225px) {
     display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
+    // padding: 0 2rem;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
   }
@@ -105,7 +108,9 @@ export const Bars = styled(FaBars)`
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
-  margin-right: -24px;
+  justify-content: space-between;
+  width: 50%;
+  // margin-right: -24px;
 
   /* Second Nav */
   /* margin-right: 24px; */
