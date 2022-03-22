@@ -21,9 +21,7 @@ const Navbar = ({ toggle }) => {
         <NavLink to='/' onClick={toggleHome}>
           <Logo/>
         </NavLink>
-        {/* <BarsContainer> */}
-          <Bars onClick={toggle}/>
-        {/* </BarsContainer>    */}
+        <Bars onClick={toggle}/>
         <NavMenu>
           <NavLink to="roadmap" spy={true} smooth={true}>
             Roadmap
