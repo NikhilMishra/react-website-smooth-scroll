@@ -32,6 +32,7 @@ export const Line = styled.div`
 
 export const Airdrop = styled.div`
   background-image: url(${airdrop});
+  background-size: contain;
   width: 157px;
   height: 157px;
   display: block;
@@ -43,6 +44,7 @@ export const Airdrop = styled.div`
 
 export const Community = styled.div`
   background-image: url(${community});
+  background-size: contain;
   width: 157px;
   height: 157px;
   display: block;
@@ -54,6 +56,7 @@ export const Community = styled.div`
 
 export const Merch = styled.div`
   background-image: url(${merch});
+  background-size: contain;
   width: 157px;
   height: 157px;
   display: block;
@@ -65,6 +68,7 @@ export const Merch = styled.div`
 
 export const Charity = styled.div`
   background-image: url(${charity});
+  background-size: contain;
   width: 157px;
   height: 157px;
   display: block;
