@@ -25,29 +25,29 @@ const Navbar = ({ toggle }) => {
                     <Column>
                         <Ashika />
                         <Space/>
-                        <Caption>Ashika</Caption>
+                        <Caption>Artistic Ashley</Caption>
                         <SmallSpace />
                         <Role> Artist </Role>
                         <SmallSpace/>
-                        <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
+                        <TeamP>Hand-drew all the assets for the fishies!<br /></TeamP>
                     </Column>
                     <Column>
                         <Nikhil />
                         <Space />
-                        <Caption>Nikhil</Caption>
+                        <Caption>Nerdy Nick</Caption>
                         <SmallSpace />
                         <Role> Developer </Role>
                         <SmallSpace />
-                        <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
+                        <TeamP>Built this website!<br /></TeamP>
                     </Column>
                     <Column>
                         <Abhinav />
                         <Space />
-                        <Caption>Abhinav</Caption>
+                        <Caption>Adaptive Alex</Caption>
                         <SmallSpace />
-                        <Role> Developer 2 </Role>
+                        <Role> Developer</Role>
                         <SmallSpace />
-                        <TeamP>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /></TeamP>
+                        <TeamP>Created the smart contract!<br /></TeamP>
                     </Column>
                 </ColumnContainer>
             </TeamDiv>

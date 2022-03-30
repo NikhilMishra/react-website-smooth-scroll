@@ -13,9 +13,9 @@ const Navbar = ({ toggle }) => {
             <OutreachDiv id='outreach'>
                 <OutreachH>Outreach<br /></OutreachH>
                 <BigSpace/>
-                <OutreachP>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br /></OutreachP>
+                <OutreachP>Since the inception of this project, we wanted to make a difference in the ocean preservation effort. To do this, we will be highlighting charities on our website and twitter regularly.<br /></OutreachP>
                 <Space/>
-                <OutreachP>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum<br /></OutreachP>
+                <OutreachP>We will also host events to raise money for ocean preservation charities, and upon reaching 100% of NFTs sold, donate 20% if all proceeds from NFT sales to a charity dedicated to saving our oceans.<br /></OutreachP>
             </OutreachDiv>
         </>
     );

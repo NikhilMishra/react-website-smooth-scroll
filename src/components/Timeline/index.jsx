@@ -21,12 +21,12 @@ const Timeline = ({ toggle }) => {
               <Airdrop />
               <Caption>Airdrops<br/></Caption>
               <Sold><br />25% Sold<br /></Sold>
-              <SubCaption><br />Airdropping free giveaways to early Suspicious Fish holders<br /></SubCaption>
+              <SubCaption><br />Airdropping free giveaways to early/whitelisted Suspicious Fish holders<br /></SubCaption>
               <Line />
               <Community />
               <Caption>Community<br /></Caption>
               <Sold><br />50% Sold<br /></Sold>
-              <SubCaption><br />The Community will decide on ways to invest proceeds<br /></SubCaption>
+              <SubCaption><br />Create a community wallet for fish NFT holders<br /></SubCaption>
               <Line />
               <Merch />
               <Caption>Merch<br /></Caption>
@@ -36,7 +36,7 @@ const Timeline = ({ toggle }) => {
               <Charity />
               <Caption>Charity<br /></Caption>
               <Sold><br />100% Sold<br /></Sold>
-              <SubCaption><br />Donate 20% of all proceeds to save the ocean!<br /></SubCaption>
+              <SubCaption><br />Donate 20% of all proceeds to ocean-preservation charities!<br /></SubCaption>
               <Line />
           </Time>
     </>
