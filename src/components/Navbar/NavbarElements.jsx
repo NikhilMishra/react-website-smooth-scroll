@@ -50,6 +50,7 @@ export const Nav = styled.nav`
   padding-top: 50px;
   /* Third Nav */
   /* justify-content: flex-start; */
+  // background-color: pink;
 `;
 
 export const NavLink = styled(LinkS)`
