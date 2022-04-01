@@ -7,8 +7,8 @@ import Sidebar from '../components/SideBar'
 import background from '../images/bg_svg.svg'
 import Outreach from '../components/Outreach'
 import Team from '../components/Team'
-import { Parallax } from 'react-scroll-parallax'
-import { useParallax } from 'react-scroll-parallax'
+// import { Parallax } from 'react-scroll-parallax'
+// import { useParallax } from 'react-scroll-parallax'
 
 import styled from 'styled-components';
 
