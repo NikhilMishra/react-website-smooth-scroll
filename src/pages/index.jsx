@@ -7,7 +7,7 @@ import Sidebar from '../components/SideBar'
 import background from '../images/bg_svg.svg'
 import Outreach from '../components/Outreach'
 import Team from '../components/Team'
-// import { Parallax } from 'react-scroll-parallax'
+import { Parallax } from 'react-scroll-parallax'
 // import { useParallax } from 'react-scroll-parallax'
 
 import styled from 'styled-components';
@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <>
-    {/* <Parallax speed={-20}> */}
+    <Parallax speed={-20}>
       <div style={{backgroundImage: `url(${background})`, 
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -49,8 +49,8 @@ const Home = () => {
                     backgroundRepeat: 'no-repeat',
                     // backgroundSize: '250px', 
                     }}>
+     <Parallax speed={23}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      {/* <Parallax speed={+20}> */}
       <Container> 
         <Navbar toggle={toggle}/>
           <Info/>
@@ -58,9 +58,9 @@ const Home = () => {
           <Outreach />
           <Team/>
       </Container>
-      {/* </Parallax>  */}
+      </Parallax> 
       </div>
-    {/* </Parallax> */}
+    </Parallax>
           
     </>
   )

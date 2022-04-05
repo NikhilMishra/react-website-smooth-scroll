@@ -13,7 +13,7 @@ export const SidebarContainer = styled.aside`
     height: 100%;
     background: #FFF;
     display: grid;
-    align-items: center;
+    align-items: top;
     top: 0;
     left: 0;
     transition: 0.3s ease-in-out;
@@ -45,7 +45,8 @@ export const TwitterLogo = styled.div`
 
 export const Icon = styled.div`
     position: absolute;
-    top: 1.2rem;
+    // top: 1.2rem;
+    padding-top: 50px;
     right: 1.5rem;
     background: transparent;
     font-size: 2rem;
@@ -61,6 +62,7 @@ export const SidebarMenu = styled.ul`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 80px);
     text-align: center;
+    padding-top: 15%;
 
     @media screen and (max-width: 480px) {
         grid-template-rows: repeat(6, 60px);
