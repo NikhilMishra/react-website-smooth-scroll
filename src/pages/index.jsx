@@ -41,7 +41,7 @@ const Home = () => {
 
   return (
     <>
-    {/* <Parallax speed={0}> */}
+    {/* <Parallax speed={-20}> */}
       <div style={{backgroundImage: `url(${background})`, 
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
@@ -50,15 +50,15 @@ const Home = () => {
                     // backgroundSize: '250px', 
                     }}>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Container> 
       {/* <Parallax speed={+20}> */}
+      <Container> 
         <Navbar toggle={toggle}/>
           <Info/>
           <Timeline />
           <Outreach />
           <Team/>
-        {/* </Parallax>  */}
       </Container>
+      {/* </Parallax>  */}
       </div>
     {/* </Parallax> */}
           

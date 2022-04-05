@@ -12,7 +12,8 @@ import {
     SmallSpace,
     Role,
     Nikhil,
-    Abhinav
+    Abhinav,
+    TeamBlurb
 } from './TeamElements';
 
 const Navbar = ({ toggle }) => {
@@ -20,6 +21,8 @@ const Navbar = ({ toggle }) => {
         <>
             <TeamDiv id='team'>
                 <TeamH>The Team<br /></TeamH>
+                <BigSpace />
+                <TeamBlurb>We are a team of computer scientists working in areas of banking and crypto. Our skills range from design, front end development, backend development as well as developing smart contracts for block chain technologies. We strongly believe protecting our oceans is an important step in combating modern day climate change. We hope that what we can accomplish in this project will help in the efforts to save our oceans.</TeamBlurb>
                 <BigSpace />
                 <ColumnContainer>
                     <Column>

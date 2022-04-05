@@ -8,7 +8,7 @@ export const TeamDiv = styled.div`
 
   // height: 600px;
   // padding: 0.5rem calc((85vw - 1000px) / 2);
-  padding: 50px 0px 100px 0px;
+  padding: 50px 0px 40px 0px;
 @media screen and  (max-width: 1225px) {
     // padding: 100px 0;
     // height: 460px;
@@ -112,5 +112,11 @@ export const Caption = styled.span`
 export const Role = styled.p`
   font-size: 14px;
   color: grey;
-  font-family: 'Avenir', sans-serif;
+  font-family: 'Avenir', sans-serif;\
+`
+
+export const TeamBlurb = styled.span`
+  font-size: 16px;
+  line-height: 2;
+  font-family: 'Avenir', sans-serif;\
 `

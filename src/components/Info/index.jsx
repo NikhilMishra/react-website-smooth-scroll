@@ -10,7 +10,7 @@ const Info = ({ toggle }) => {
             <Column1>
               <TextWrapper>
                 <Heading>Meet the Suspicious Fish</Heading>
-                <Subtitle>5,050 uniquely generated suspicious fish ready to take back their ocean. Hand drawn and code generated, no two fish are the same.</Subtitle>
+                <Subtitle>5050 uniquely generated, hand drawn suspicious fish ready to take back their ocean. We are a women-led project making an impact in ocean preservation efforts through our NFT sales and community driven efforts.</Subtitle>
               </TextWrapper>
             </Column1>
             {/* <Column3/> */}

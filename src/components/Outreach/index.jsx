@@ -15,7 +15,7 @@ const Navbar = ({ toggle }) => {
                 <BigSpace/>
                 <OutreachP>Since the inception of this project, we wanted to make a difference in the ocean preservation effort. To do this, we will be highlighting charities on our website and twitter regularly.<br /></OutreachP>
                 <Space/>
-                <OutreachP>We will also host events to raise money for ocean preservation charities, and upon reaching 100% of NFTs sold, donate 20% if all proceeds from NFT sales to a charity dedicated to saving our oceans.<br /></OutreachP>
+                <OutreachP>We will also host events to raise money for ocean preservation charities, and upon reaching 100% of NFTs sold, donate 20% of all proceeds from NFT sales to a charity dedicated to saving our oceans.<br /></OutreachP>
             </OutreachDiv>
         </>
     );
